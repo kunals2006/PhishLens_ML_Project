@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PhishLens: Run app",
+      "type": "shell",
+      "command": "if [ -x .venv/bin/python ]; then .venv/bin/python -m streamlit run app.py; elif [ -x /private/tmp/phishlens-venv/bin/python ]; then /private/tmp/phishlens-venv/bin/python -m streamlit run app.py; else python3 -m streamlit run app.py; fi",
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "PhishLens: Train and evaluate",
+      "type": "shell",
+      "command": "if [ -x .venv/bin/python ]; then .venv/bin/python train_model.py; elif [ -x /private/tmp/phishlens-venv/bin/python ]; then /private/tmp/phishlens-venv/bin/python train_model.py; else python3 train_model.py; fi",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    }
+  ]
+}
