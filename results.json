@@ -1,0 +1,69 @@
+{
+  "dataset_rows": 2998,
+  "label_counts": {
+    "legitimate": 1500,
+    "phishing": 1498
+  },
+  "split_rows": {
+    "train": 1821,
+    "validation": 555,
+    "test": 622
+  },
+  "unique_domains": 2385,
+  "models_validation": {
+    "Logistic Regression": {
+      "validation_threshold": 0.33302846894690913,
+      "validation_precision": 0.6302325581395349,
+      "validation_recall": 0.9063545150501672,
+      "validation_f1": 0.7434842249657064
+    },
+    "Random Forest": {
+      "validation_threshold": 0.4060313519633119,
+      "validation_precision": 0.7780979827089337,
+      "validation_recall": 0.903010033444816,
+      "validation_f1": 0.8359133126934984
+    }
+  },
+  "selected_model": "Random Forest",
+  "selected_threshold": 0.4060313519633119,
+  "held_out_test": {
+    "accuracy": 0.7909967845659164,
+    "precision": 0.7227414330218068,
+    "recall": 0.8498168498168498,
+    "f1": 0.7811447811447811,
+    "confusion_matrix_labels_0_legitimate_1_phishing": [
+      [
+        260,
+        89
+      ],
+      [
+        41,
+        232
+      ]
+    ]
+  },
+  "feature_names": [
+    "url_length",
+    "hostname_length",
+    "path_length",
+    "query_length",
+    "count_dots",
+    "count_hyphens",
+    "count_at",
+    "count_question",
+    "count_ampersand",
+    "count_equal",
+    "count_digits",
+    "count_subdomains",
+    "has_ip_address",
+    "has_port",
+    "has_suspicious_word",
+    "suspicious_word_count",
+    "has_percent_encoding",
+    "has_double_slash_in_path",
+    "tld_length",
+    "letter_ratio",
+    "digit_ratio",
+    "url_entropy"
+  ]
+}
