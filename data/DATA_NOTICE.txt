@@ -1,0 +1,9 @@
+Data attribution
+
+Phishing Site URLs dataset by Tarun Tiwari, distributed on Kaggle:
+https://www.kaggle.com/datasets/taruntiwarihp/phishing-site-urls
+
+Bundled subset mirror and dataset card:
+https://huggingface.co/datasets/shawhin/phishing-site-classification
+
+The mirror describes itself as a subset of the Kaggle dataset and lists ODbL metadata. The bundled CSV is a 3,000-row subset; the training script removes duplicate URLs before splitting.
